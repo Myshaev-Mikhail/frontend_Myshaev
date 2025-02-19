@@ -43,11 +43,8 @@ form {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-top: auto; /* Перемещает кнопки вниз */
+    margin-top: auto;
 }
-
-
-
 
 .modal-overlay.active,
 .overlay.active {
