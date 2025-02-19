@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
         "card-1": {
             title: "Expand Your Horizons",
             description: "Learn how to showcase your unique skills and stand out in the competitive job market.",
-            image: "img/134006.png"
+            image: "img/slider1.jpg"
         },
         "card-2": {
             title: "Creative Portfolios Made Easy",
             description: "We provide tools to make your portfolio shine and attract the right recruiters effortlessly.",
-            image: "img/134006.png"
+            image: "img/slider2.jpg"
         },
         "card-3": {
             title: "Achieve Your Goals",
             description: "Take the next step in your career journey with Jobly's seamless job-matching platform.",
-            image: "img/Candidates.png"
+            image: "img/slider3.jpg"
         }
     };
 

@@ -12,6 +12,9 @@
     gap: 20px;
     flex-wrap: wrap;
 }
+.card-image{
+    max-width: 890px;
+}
 .feature.active {
     border-top: 4px solid #3D1EDD;
     background-color: #f0f0ff;
@@ -25,7 +28,7 @@
     transition: transform 0.2s, background-color 0.2s;
     cursor: pointer;
     margin: 10px;
-    max-width: 300px;
+    max-width: 230px;
 }
 h3{
     font-size: 16px;
