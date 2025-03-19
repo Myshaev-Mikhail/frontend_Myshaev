@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    setTimeout(() => {
-        preloader.style.opacity = '0';
-        preloader.addEventListener('transitionend', () => {
-            preloader.remove();
-        });
-    }, 2000);
+
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+
+    setTimeout(function() {
+        preloader.style.display = 'none';
+    }, 500);
 });
