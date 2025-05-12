@@ -11,6 +11,10 @@ interface CardData {
     image: string;
 }
 
+<<<<<<< HEAD
+=======
+// Тип для объекта с карточками
+>>>>>>> origin/main
 type CardsRecord = Record<string, CardData>;
 
 document.addEventListener("DOMContentLoaded", (): void => {
@@ -27,6 +31,10 @@ document.addEventListener("DOMContentLoaded", (): void => {
                 }))
                 .reduce((acc: CardsRecord, card: { [key: string]: CardData }): CardsRecord => ({ ...acc, ...card }), {});
 
+<<<<<<< HEAD
+=======
+            // Функция создания шаблона карточки
+>>>>>>> origin/main
             function createCardTemplate({ title, description, image }: CardData): string {
                 return `
                     <div class="card">
@@ -37,6 +45,10 @@ document.addEventListener("DOMContentLoaded", (): void => {
                 `;
             }
 
+<<<<<<< HEAD
+=======
+            // Функция отображения карточки
+>>>>>>> origin/main
             function displayCard(cardData: CardData): void {
                 const cardDisplay: HTMLElement | null = document.querySelector('.card-display');
                 if (!cardDisplay) {
@@ -46,6 +58,10 @@ document.addEventListener("DOMContentLoaded", (): void => {
                 cardDisplay.innerHTML = createCardTemplate(cardData);
             }
 
+<<<<<<< HEAD
+=======
+            // Функция обработки кликов по элементам .feature
+>>>>>>> origin/main
             function handleFeatureClicks(): void {
                 const features: NodeListOf<HTMLElement> = document.querySelectorAll('.feature');
 
@@ -54,10 +70,18 @@ document.addEventListener("DOMContentLoaded", (): void => {
                     return;
                 }
 
+<<<<<<< HEAD
+=======
+                // Установка начального состояния
+>>>>>>> origin/main
                 features.forEach((f: HTMLElement): void => f.classList.remove('active'));
                 features[0].classList.add('active');
                 displayCard(cards['card-1']);
 
+<<<<<<< HEAD
+=======
+                // Добавление обработчиков событий
+>>>>>>> origin/main
                 features.forEach((feature: HTMLElement, index: number): void => {
                     feature.addEventListener('click', (): void => {
                         features.forEach((f: HTMLElement): void => f.classList.remove('active'));
